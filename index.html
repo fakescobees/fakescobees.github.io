@@ -4,10 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scobees</title>
-    <!-- Favicon link as requested -->
+    
+    <!-- Standard Favicon -->
     <link rel="icon" type="image/png" href="assets/icon.png">
+    
+    <!-- iOS Home Screen Icon -->
+    <link rel="apple-touch-icon" href="assets/icon.png">
+    
+    <!-- iOS Web App Metadata -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Scobees">
+
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        /* Loading Spinner Animation */
+        .loader {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #3498db;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
 </head>
 <body>
+    <!-- Infinite Loader -->
+    <div class="loader"></div>
 </body>
 </html>
